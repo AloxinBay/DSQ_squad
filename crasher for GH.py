@@ -68,3 +68,4 @@ bot.run("")
 # hilmanzz [discord]
 # MoonsDay Client - dsc.gg/moonsday
 # DQS squad - t.me/DSQ_squad
+# official GitHub - https://github.com/AloxinBay/DSQ_squad
